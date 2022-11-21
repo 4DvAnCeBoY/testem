@@ -1,0 +1,65 @@
+{
+  "framework": "jasmine",
+  "timeout": 600,
+  "parallel": 5,
+  "disable_watching": true,
+  "on_start": "./lt-connect.js",
+  "on_exit": "./lt-disconnect.js",
+  "port": 7000,
+  "tunnel":true,
+  "browser_start_timeout": 90,
+  "src_files": [
+    "hello.js", "hello_spec.js"
+  ],
+  "launchers": {
+    "LT_Chrome_Current": {
+      "exe": "./node_modules/.bin/lt-testem",
+      "args": ["-b", "chrome", "-p", "Windows 10", "-v", "latest", "--no-connect", "--attach", "-u"],
+      "protocol": "browser"
+    },
+    "LT_Chrome_Current_No_Details": {
+      "exe": "./node_modules/.bin/lt-testem",
+      "args": ["-b", "chrome", "-p", "Windows 10", "-v", "latest", "--no-connect", "-u"],
+      "protocol": "tap"
+    },
+    "LT_Firefox_Current": {
+      "exe": "./node_modules/.bin/lt-testem",
+      "args": ["-b", "firefox", "-p", "Windows 10", "-v", "latest", "--no-connect", "--attach", "-u"],
+      "protocol": "browser"
+    },
+    "LT_Safari_Current": {
+      "exe": "./node_modules/.bin/lt-testem",
+      "args": ["-b", "safari", "-v", "9", "--no-connect", "--attach", "-u"],
+      "protocol": "browser"
+    },
+    "LT_Safari_Last": {
+      "exe": "./node_modules/.bin/lt-testem",
+      "args": ["-b", "safari", "-v", "8", "--no-connect", "--attach", "-u"],
+      "protocol": "browser"
+    },
+    "LT_MS_Edge": {
+      "exe": "./node_modules/.bin/lt-testem",
+      "args": ["-b", "microsoftedge", "--no-connect", "--attach", "-u"],
+      "protocol": "browser"
+    },
+    "LT_IE_11": {
+      "exe": "./node_modules/.bin/lt-testem",
+      "args": ["-b", "internet explorer", "-v", "11", "--no-connect", "--attach", "-u"],
+      "protocol": "browser"
+    },
+    "LT_IE_10": {
+      "exe": "./node_modules/.bin/lt-testem",
+      "args": ["-b", "internet explorer", "-v", "10", "--no-connect", "--attach", "-u"],
+      "protocol": "browser"
+    },
+    "LT_IE_9": {
+      "exe": "./node_modules/.bin/lt-testem",
+      "args": ["-b", "internet explorer", "-v", "9", "--no-connect", "--attach", "-u"],
+      "protocol": "browser"
+    }
+  },
+  "launch_in_dev": [],
+  "launch_in_ci": [
+    "LT_Chrome_Current"
+  ]
+}

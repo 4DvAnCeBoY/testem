@@ -1,0 +1,14 @@
+{
+  "name": "lambdatest-testem",
+  "version": "1.0.0",
+  "description": "testem example with lambdatest.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "testem ci --port 8080"
+  },
+  "author": "lambdatest",
+  "license": "MIT",
+  "dependencies": {
+    "lt-testem": "github:LambdaTest/lt-testem"
+  }
+}
