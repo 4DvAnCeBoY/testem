@@ -4,11 +4,12 @@
   "description": "testem example with lambdatest.com",
   "main": "index.js",
   "scripts": {
-    "test": "testem ci --port 8080"
+    "test": "./node_modules/.bin/testem ci --port 8080"
   },
   "author": "lambdatest",
   "license": "MIT",
   "dependencies": {
-    "lt-testem": "github:LambdaTest/lt-testem"
+    "lt-testem": "github:LambdaTest/lt-testem",
+    "testem": "^3.10.0"
   }
 }
