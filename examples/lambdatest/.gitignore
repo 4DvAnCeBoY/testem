@@ -1,0 +1,5 @@
+node_modules
+.lambdatest
+*.log
+*.pid
+package-lock.json

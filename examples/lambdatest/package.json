@@ -4,7 +4,8 @@
   "description": "testem example with lambdatest.com",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/testem ci --port 8080",
+    "test": " npm run tunnel ; npm run testem",
+    "testem": "sleep 15s ; ./node_modules/.bin/testem ci --port 8080",
     "tunnel":"node ./lt-connect.js &"
   },
   "author": "lambdatest",
