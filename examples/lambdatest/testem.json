@@ -46,11 +46,6 @@
       "exe": "./node_modules/.bin/lt-testem",
       "args": ["-b", "internet explorer", "-v", "11", "--no-connect", "--attach", "-u"],
       "protocol": "browser"
-    },
-    "LT_IE_10": {
-      "exe": "./node_modules/.bin/lt-testem",
-      "args": ["-b", "internet explorer", "-v", "10", "--no-connect", "--attach", "-u"],
-      "protocol": "browser"
     }
   },
   "launch_in_dev": [],
@@ -61,8 +56,7 @@
     "LT_Safari_Current",
     "LT_Safari_Last",
     "LT_MS_Edge",
-    "LT_IE_11",
-    "LT_IE_10"
+    "LT_IE_11"
 
 
   ]
