@@ -3,12 +3,6 @@
 var ltTestem = require('lt-testem');
 var pidFile = 'lt_tunnel.pid';
 var lambdaTunnel = require('@lambdatest/node-tunnel');
-const { env } = require('shelljs');
-
-if(process.argv[2]){
-  process.kill(process.argv[2], 'SIGINT');
-  process.exit(0);
-}
 
 var tunnelInstance = new lambdaTunnel();
 // Replace <lambdatest-user> with your user and <lambdatest-accesskey> with your key.
