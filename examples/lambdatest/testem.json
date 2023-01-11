@@ -14,27 +14,27 @@
   "launchers": {
     "LT_Chrome_Current": {
       "exe": "./node_modules/.bin/lt-testem",
-      "args": ["-b", "chrome", "-p", "Windows 10", "-v", "latest", "--no-connect", "--attach", "-u"],
+      "args": ["-b", "chrome", "-p", "Windows 10", "-v", "latest","--console","true","--network","true" , "--no-connect", "--attach", "-u"],
       "protocol": "browser"
     },
     "LT_Chrome_Current_No_Details": {
       "exe": "./node_modules/.bin/lt-testem",
-      "args": ["-b", "chrome", "-p", "Windows 10", "-v", "latest", "--no-connect", "-u"],
+      "args": ["-b", "chrome", "-p", "Windows 10", "-v", "latest","--console","true","--network","true" ,"--no-connect", "-u"],
       "protocol": "tap"
     },
     "LT_Firefox_Current": {
       "exe": "./node_modules/.bin/lt-testem",
-      "args": ["-b", "firefox", "-p", "Windows 10", "-v", "latest", "--no-connect", "--attach", "-u"],
+      "args": ["-b", "firefox", "-p", "Windows 10", "-v","latest","--console","true","--network","true" , "--no-connect", "--attach", "-u"],
       "protocol": "browser"
     },
     "LT_Safari_Current": {
       "exe": "./node_modules/.bin/lt-testem",
-      "args": ["-b", "safari", "-v", "latest", "--no-connect", "--attach", "-u"],
+      "args": ["-b", "safari", "-v", "latest","--console","true","--network","true" , "--no-connect", "--attach", "-u"],
       "protocol": "browser"
     },
     "LT_Safari_Last": {
       "exe": "./node_modules/.bin/lt-testem",
-      "args": ["-b", "safari", "-v", "11", "--no-connect", "--attach", "-u"],
+      "args": ["-b", "safari", "-v", "11","--console","true","--network","true" , "--no-connect", "--attach", "-u"],
       "protocol": "browser"
     },
     "LT_MS_Edge": {
@@ -44,7 +44,7 @@
     },
     "LT_IE_11": {
       "exe": "./node_modules/.bin/lt-testem",
-      "args": ["-b", "internet explorer", "-v", "11", "--no-connect", "--attach", "-u"],
+      "args": ["-b", "internet explorer", "-v", "11","--console","true","--network","true" , "--no-connect", "--attach", "-u"],
       "protocol": "browser"
     }
   },
